@@ -1,0 +1,9 @@
+{
+  "name": "WebArt.Assetra.Editor",
+  "rootNamespace": "WebArt.Assetra.Editor",
+  "references": ["WebArt.Assetra.Runtime"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true
+}

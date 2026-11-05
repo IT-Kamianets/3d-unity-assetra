@@ -1,0 +1,9 @@
+{
+  "name": "WebArt.Assetra.Runtime",
+  "rootNamespace": "WebArt.Assetra",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true
+}
