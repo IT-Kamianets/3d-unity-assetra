@@ -1,12 +1,14 @@
 {
-  "name": "com.webart.assetra",
-  "displayName": "Assetra",
+  "name": "com.itkamianets.3d-unity-assetra",
+  "displayName": "3D Assetra",
   "version": "0.1.0",
-  "unity": "2022.3",
+  "unity": "6000.6",
   "description": "Browse, import and publish 3D models of Assetra (assetra.itkamianets.com) from any Unity game.",
   "keywords": ["assetra", "3d", "assets"],
-  "author": { "name": "IT Kamianets" },
+  "license": "MIT",
+  "author": { "name": "IT Kamianets", "url": "https://github.com/IT-Kamianets" },
   "dependencies": {
-    "com.unity.nuget.newtonsoft-json": "3.2.1"
+    "com.unity.nuget.newtonsoft-json": "3.2.2",
+    "com.unity.modules.unitywebrequest": "1.0.0"
   }
 }

@@ -1,6 +1,6 @@
 # 3d-unity-assetra
 
-Unity package (`com.webart.assetra`) that connects any of our games to **Assetra**
+Unity package (`com.itkamianets.3d-unity-assetra`) that connects any of our games to **Assetra**
 (assetra.itkamianets.com): one library of 3D models shared between games. Models made in a game are
 published to Assetra with as much metadata as Unity can extract, and the next game pulls them back.
 
