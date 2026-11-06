@@ -1,0 +1,14 @@
+{
+  "name": "WebArt.Assetra.Tests.Editor",
+  "rootNamespace": "WebArt.Assetra.Tests",
+  "references": ["WebArt.Assetra.Runtime", "WebArt.Assetra.Editor", "UnityEngine.TestRunner", "UnityEditor.TestRunner"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": ["nunit.framework.dll", "Newtonsoft.Json.dll"],
+  "autoReferenced": false,
+  "defineConstraints": ["UNITY_INCLUDE_TESTS"],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

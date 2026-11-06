@@ -1,7 +1,7 @@
 {
   "name": "com.itkamianets.3d-unity-assetra",
   "displayName": "3D Assetra",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "unity": "6000.6",
   "description": "Browse, import and publish 3D models of Assetra (assetra.itkamianets.com) from any Unity game.",
   "keywords": ["assetra", "3d", "assets"],
