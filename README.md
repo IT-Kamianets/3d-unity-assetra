@@ -87,3 +87,7 @@ sign-in. Open points:
 - Creating or editing models of the library from Unity (admin routes are not wrapped yet).
 
 Unity writes `.meta` files on first import: commit them, packages need stable GUIDs.
+
+## Pushing local models
+
+`Window > Assetra > Project sync > Push local models to waiting placeholders` uploads the GLB of every placeholder that is still empty (file listed in `assetra.json` `source.uri`, up to 7 MB), adds it to the library with `AssetraClient.CreateModelAsync` and fills the placeholder. Admin account required; filled placeholders are never touched.

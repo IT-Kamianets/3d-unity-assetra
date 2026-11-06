@@ -119,6 +119,14 @@ namespace WebArt.Assetra
         public async Task<AssetraModel> GetModelAsync(string id) =>
             JsonConvert.DeserializeObject<AssetraModel>(await SendAsync("GET", $"/api/assetra/model/{Uri.EscapeDataString(id)}", null));
 
+        /// <summary>
+        /// Adds a model to the library (admin only). <c>modelUrl</c> must be a file uploaded with <see cref="UploadAsync"/>
+        /// (the API accepts only Assetra CDN urls); <c>title</c> is required.
+        /// </summary>
+        public async Task<AssetraModel> CreateModelAsync(AssetraModel model) =>
+            JsonConvert.DeserializeObject<AssetraModel>(
+                await SendAsync("POST", "/api/assetra/model", JsonConvert.SerializeObject(model)));
+
         public async Task<List<AssetraCollection>> ListCollectionsAsync() =>
             JsonConvert.DeserializeObject<List<AssetraCollection>>(await SendAsync("GET", "/api/assetra/collection", null));
 

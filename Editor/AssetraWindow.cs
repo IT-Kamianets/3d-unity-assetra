@@ -31,6 +31,7 @@ namespace WebArt.Assetra.Editor
         bool _prune;
         bool _download = true;
         AssetraSyncReport _report;
+        string _pushCollection = "";
 
         // Collections
         List<AssetraCollection> _collections = new();
@@ -170,6 +171,16 @@ namespace WebArt.Assetra.Editor
                 EditorGUILayout.HelpBox("Prune deletes placeholders from the Assetra project (never the models). Leave it off unless the list is complete.", MessageType.Warning);
 
             if (GUILayout.Button("Sync project")) Run(client => Sync(client, path));
+
+            EditorGUILayout.Space();
+            _pushCollection = EditorGUILayout.TextField("Collection id (optional)", _pushCollection);
+            EditorGUILayout.HelpBox("Uploads the GLB of every placeholder that is still waiting, adds it to the library and fills the placeholder. Needs an admin account; files above 7 MB are skipped.", MessageType.None);
+
+            if (GUILayout.Button("Push local models to waiting placeholders")) Run(async client =>
+            {
+                _report = await AssetraPush.RunAsync(client, path, _pushCollection.Trim());
+                _status = _report.Lines[0];
+            });
 
             if (_report == null) return;
 
